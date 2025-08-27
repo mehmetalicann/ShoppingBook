@@ -53,14 +53,17 @@ fun AddItemScreen(saveFunciton: (item : Item) -> Unit){
 
     val itemName = remember {
         mutableStateOf("")
+        
     }
 
     val storageName = remember {
         mutableStateOf("")
+
     }
 
     val price = remember {
         mutableStateOf("")
+
     }
 
     val selectedImageUri by remember{
