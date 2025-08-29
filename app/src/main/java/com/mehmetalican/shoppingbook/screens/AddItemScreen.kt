@@ -180,7 +180,9 @@ fun ImagePicker(onImageSelected: (Uri?) -> Unit){
                 modifier = Modifier.size(300.dp, 200.dp)
                     .padding(16.dp)
             )
+
             onImageSelected(it)
+
         } ?: Image(
                 painter = painterResource(com.mehmetalican.shoppingbook.R.drawable.selectimage),
             contentDescription = "Selected Image",
